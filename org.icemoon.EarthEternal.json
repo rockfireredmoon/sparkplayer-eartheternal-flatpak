@@ -1,0 +1,33 @@
+{
+	"app-id": "org.icemoon.EarthEternal",
+	"runtime": "org.freedesktop.Platform",
+	"runtime-version": "18.08",
+	"sdk": "org.freedesktop.Sdk",
+	"command": "player",
+	"finish-args": [
+		"--share=network",
+		"--device=dri",
+		"--socket=pulseaudio",
+		"--socket=x11",
+		"--share=ipc"
+	],
+	"modules": [
+		{
+			"name": "player",
+			"buildsystem": "meson",
+			"config-opts": [
+				"-Dgtk=false"
+			],
+			"sources": [
+				{
+					"type": "git",
+					"path": "../sparkplayer"
+				}
+			],
+			"modules": [
+				"zlib.json",
+				"boost.json"
+			]
+		}
+	]
+}
