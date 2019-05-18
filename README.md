@@ -127,6 +127,6 @@ Now the local copy of the repository should be synchronized with live remote rep
 
 ```
 rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
-		--progress the-anubian-war/*  \
+		--progress earth-eternal/*  \
 		admin@flatpak.theanubianwar.com:/srv/flatpak.theanubianwar.com/public/htdocs
 ```
