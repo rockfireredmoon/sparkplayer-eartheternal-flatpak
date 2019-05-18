@@ -3,7 +3,7 @@
 ./bootstrap.sh "$@"
 
 cat <<EOF > "Makefile"
-LIB_TARGETS = --with-chrono --with-system --with-random
+LIB_TARGETS = --with-chrono --with-system --with-random --with-filesystem --with-thread
 all:
 	./b2 -j `nproc --ignore=1` \$(LIB_TARGETS)
 install:

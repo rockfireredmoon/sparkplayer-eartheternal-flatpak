@@ -1,7 +1,7 @@
 {
 	"app-id": "org.icemoon.EarthEternal",
 	"runtime": "org.freedesktop.Platform",
-	"runtime-version": "18.08",
+	"runtime-version": "1.6",
 	"sdk": "org.freedesktop.Sdk",
 	"command": "player",
 	"finish-args": [
@@ -12,21 +12,56 @@
 		"--share=ipc"
 	],
 	"modules": [
+        {
+            "name": "icons",
+            "buildsystem": "simple",
+            "build-commands": [
+                    "install -Dm644 org.icemoon.EarthEternal.png /app/share/icons/hicolor/128x128/apps/org.icemoon.EarthEternal.png",
+                    "install -Dm644 org.icemoon.EarthEternal.desktop /app/share/applications/org.icemoon.EarthEternal.desktop",
+                    "install -Dm644 org.icemoon.EarthEternal.appdata.xml /app/share/metainfo/org.icemoon.EarthEternal.appdata.xml"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "org.icemoon.EarthEternal.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "org.icemoon.EarthEternal.png"
+				},
+                {
+                    "type": "file",
+                    "path": "org.icemoon.EarthEternal.appdata.xml"
+				}
+			]
+		},
 		{
 			"name": "player",
 			"buildsystem": "meson",
 			"config-opts": [
-				"-Dgtk=false"
+				"-Dgtk=false",
+				"-Dplugins_dir=/app/lib",
+				"-Dname=Earth Eternal",
+				"-Dresources_dir=/app/resources",
+				"-Duser_cache_dir=~/.var/app/org.icemoon.EarthEternal/data",
+				"-Dplugins_cfg=/app/resources/plugins.cfg",
+				"-Dresources_cfg=/app/resources/resources.cfg",
+				"-Dogre_cfg=/app/resources/ogre.cfg",
+				"-Dbuild_type=release",
+				"-Doptimization=3"
 			],
+			"build-options": {
+				"build-args": ["--share=network"]
+			},
 			"sources": [
 				{
 					"type": "git",
-					"path": "../sparkplayer"
+					"url": "../sparkplayer"
 				}
 			],
 			"modules": [
-				"zlib.json",
-				"boost.json"
+				"boost.json",
+				"glu.json"
 			]
 		}
 	]

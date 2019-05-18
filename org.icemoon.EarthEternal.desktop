@@ -2,7 +2,8 @@
 Name=Earth Eternal
 Comment=An MMORPG set in a world where humans no longer exist. 
 Exec=player http://live.theanubianwar.com/Release/Current/EarthEternal.car
-Icon=@PIXMAPS@/earth-eternal.png
+Icon=org.icemoon.EarthEternal
 Terminal=false
 Type=Application
-Categories=Network;Game;
+Categories=Game
+StartupWMClass=EarthEternal
