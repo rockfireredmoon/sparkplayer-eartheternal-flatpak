@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop">
   <id>org.icemoon.EarthEternal</id>
-  <launchable type="desktop-id">org.flatpak.qtdemo.desktop</launchable>
+  <launchable type="desktop-id">org.icemoon.EarthEternal.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
 ​  <name>Earth Eternal</name>
   <summary>An MMORPG set in a world where humans no longer exist.</summary>
