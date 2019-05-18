@@ -4,7 +4,9 @@
   <launchable type="desktop-id">org.icemoon.EarthEternal.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
 ​  <name>Earth Eternal</name>
+  <developer_name>Emerald Icemoon</developer_name>
   <summary>An MMORPG set in a world where humans no longer exist.</summary>
+  <project_license>LicenseRef-proprietary</project_license>
   <description>
     <p>Now a fan run game, Earth Eternal is an abandoned MMORPG based on the OGRE 3D engine.</p>
     <p>The current release is 'Earth Eternal - Valkal's Shadow', which includes 2 whole new regions, lots more quests and a bunch of new dungeons..</p>

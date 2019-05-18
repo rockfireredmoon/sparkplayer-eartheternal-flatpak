@@ -4,7 +4,7 @@ This repository provides information about the Earth Eternal client *Sparkplayer
 
 ## For Players
 
-If you just want to play [http://www.theanubianwar.com/valkals-shadow](Earth Eternal - Valkal's Shadow), you can install this [Flatpak](https://flatpak.org) from our repository. Flatpaks run on many different Linux distributions, and many of the most popular distributions have built in support for them in their package managers. We chose Flatpak as our distribution method for this reason,
+If you just want to play [Earth Eternal - Valkal's Shadow](http://www.theanubianwar.com/valkals-shadow), you can install this [Flatpak](https://flatpak.org) from our repository. Flatpaks run on many different Linux distributions, and many of the most popular distributions have built in support for them in their package managers. We chose Flatpak as our distribution method for this reason,
 and for the fact we can also provide automatic updates. 
 
 ### Install Flatpak
@@ -127,6 +127,6 @@ Now the local copy of the repository should be synchronized with live remote rep
 
 ```
 rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
-		--progress earth-eternal/*  \
+		--delete-before --progress earth-eternal/*  \
 		admin@flatpak.theanubianwar.com:/srv/flatpak.theanubianwar.com/public/htdocs
 ```

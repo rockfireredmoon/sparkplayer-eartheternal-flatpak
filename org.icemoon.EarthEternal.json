@@ -18,7 +18,7 @@
             "build-commands": [
                     "install -Dm644 org.icemoon.EarthEternal.png /app/share/icons/hicolor/128x128/apps/org.icemoon.EarthEternal.png",
                     "install -Dm644 org.icemoon.EarthEternal.desktop /app/share/applications/org.icemoon.EarthEternal.desktop",
-                    "install -Dm644 org.icemoon.EarthEternal.appdata.xml /app/share/metainfo/org.icemoon.EarthEternal.appdata.xml"
+                    "install -Dm644 org.icemoon.EarthEternal.appdata.xml /app/share/appdata/org.icemoon.EarthEternal.appdata.xml"
             ],
             "sources": [
                 {
