@@ -1,7 +1,7 @@
 {
 	"app-id": "org.icemoon.EarthEternal",
 	"runtime": "org.freedesktop.Platform",
-	"runtime-version": "1.6",
+	"runtime-version": "19.08",
 	"sdk": "org.freedesktop.Sdk",
 	"command": "player",
 	"finish-args": [
@@ -16,6 +16,7 @@
             "name": "icons",
             "buildsystem": "simple",
             "build-commands": [
+            		"mkdir -p /app/share/appdata /app/share/applications /app/share/icons/hicolor/128x128/apps",
                     "install -Dm644 org.icemoon.EarthEternal.png /app/share/icons/hicolor/128x128/apps/org.icemoon.EarthEternal.png",
                     "install -Dm644 org.icemoon.EarthEternal.desktop /app/share/applications/org.icemoon.EarthEternal.desktop",
                     "install -Dm644 org.icemoon.EarthEternal.appdata.xml /app/share/appdata/org.icemoon.EarthEternal.appdata.xml"
@@ -41,14 +42,15 @@
 			"config-opts": [
 				"-Dgtk=false",
 				"-Dplugins_dir=/app/lib",
+				"-Dpatcher=false",
 				"-Dname=Earth Eternal",
 				"-Dresources_dir=/app/resources",
 				"-Duser_cache_dir=~/.var/app/org.icemoon.EarthEternal/data",
 				"-Dplugins_cfg=/app/resources/plugins.cfg",
 				"-Dresources_cfg=/app/resources/resources.cfg",
-				"-Dogre_cfg=/app/resources/ogre.cfg",
-				"-Dbuild_type=release",
-				"-Doptimization=3"
+				"-Dogre_cfg=/app/resources/ogre.cfg"
+				/* ,"-Dbuildtype=release",cd \u
+				"-Doptimization=3" */
 			],
 			"build-options": {
 				"build-args": ["--share=network"]

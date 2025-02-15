@@ -3,16 +3,16 @@
   <id>org.icemoon.EarthEternal</id>
   <launchable type="desktop-id">org.icemoon.EarthEternal.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
-​  <name>Earth Eternal</name>
+  <name>Earth Eternal - Valkal's Shadow</name>
   <developer_name>Emerald Icemoon</developer_name>
-  <summary>An MMORPG set in a world where humans no longer exist.</summary>
+  <summary>An MMORPG set in a world where humans no longer exist</summary>
   <project_license>LicenseRef-proprietary</project_license>
   <description>
     <p>Now a fan run game, Earth Eternal is an abandoned MMORPG based on the OGRE 3D engine.</p>
-    <p>The current release is 'Earth Eternal - Valkal's Shadow', which includes 2 whole new regions, lots more quests and a bunch of new dungeons..</p>
+    <p>The current release is 'Earth Eternal - Valkal's Shadow', which includes 2 whole new regions, lots more quests and a bunch of new dungeons.</p>
   </description>
   <releases>
-    <release version="0.9.9" date="2019-05-18"><description><p>Alpha release of the brand new Linux port!</p></description></release>
+    <release version="0.9.9" date="2019-05-18"/>
   </releases>
   <screenshots>
     <screenshot type="default">
@@ -20,16 +20,17 @@
       <image type="source">http://files.theanubianwar.com/flatpak/screenshot-1-cc.jpg</image>
     </screenshot>
     <screenshot>
-    	<caption>In Game</caption>
+    	<caption>Random In Game Screenshot</caption>
       <image type="source">http://files.theanubianwar.com/flatpak/screenshot-2-camp.jpg</image>
     </screenshot>
   </screenshots>
   <categories>
-    <category>Games</category>
+    <category>Game</category>
   </categories>
   <url type="homepage">http://www.theanubianwar.com</url>
   <url type="bugtracker">https://github.com/rockfireredmoon/iceee/issues</url>
   <provides>
     <binary>player</binary>
   </provides>
+  <update_contact>emerald.icemoon_at_gmail.com</update_contact>
 </component>

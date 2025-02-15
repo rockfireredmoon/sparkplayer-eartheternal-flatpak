@@ -88,7 +88,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 Install the Flatpak runtime and SDK we will be using :-
 
 ```
-flatpak install flathub org.freedesktop.Platform//18.08 org.freedesktop.Sdk//18.08
+flatpak install flathub org.freedesktop.Platform//19.08 org.freedesktop.Sdk//19.08
 ```
 
 ### Preparing The Repository
@@ -101,7 +101,7 @@ This will of course require SSH access to the repository web server.
 
 ```
 rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress \
-   admin@flatpak.theanubianwar.com:/srv/flatpak.theanubianwar.com/public/htdocs earth-eternal
+   admin@flatpak.theanubianwar.com:/srv/flatpak.theanubianwar.com/public/htdocs/repo earth-eternal
 
 ```
 
@@ -128,5 +128,5 @@ Now the local copy of the repository should be synchronized with live remote rep
 ```
 rsync -avz -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
 		--delete-before --progress earth-eternal/*  \
-		admin@flatpak.theanubianwar.com:/srv/flatpak.theanubianwar.com/public/htdocs
+		admin@flatpak.theanubianwar.com:/srv/flatpak.theanubianwar.com/public/htdocs/repo
 ```
